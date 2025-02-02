@@ -13,9 +13,20 @@ Guide: https://tailwindcss.com/docs/installation/tailwind-cli
 
 1. `npm init -y` to create a project (with package.json)
 2. Follow the guide above. Imposes a certain structure on you.
+3. _ALWAYS RUN TAILWIND CLI_: `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
+
+## How it works + benefits
 
 - Generates an `output.css` file, massive file which defines a bunch of default classes and styling.
 - Constantly watches your html file for changes. Tailwind extension now works in vscode, so you can start adding classes to the style of your html elements.
 - Tailwind will monitor these changes, and define the appropriate classes in output.css (dynamically generated based on your changes to html) in the most efficient way.
 - **_BASICALLY, tailwind automatically writes new CSS for you._**
 - Need to learn the tailwind equivalent of traditional CSS. Eg: `justify-content: center` in the tailwind world is just the class `justify-center`: https://tailwindcss.com/docs/justify-content
+- Write CSS without leaving your HTML
+- Reuse HTML components once styled: it'll always look the same in whatever project you use
+
+## Responsive design
+
+https://tailwindcss.com/docs/responsive-design
+
+- Idea: target mobile first by prefixing your class with `sm` -- this is how your element behaves at and after the small breakpoint.
