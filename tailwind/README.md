@@ -30,3 +30,7 @@ Guide: https://tailwindcss.com/docs/installation/tailwind-cli
 https://tailwindcss.com/docs/responsive-design
 
 - Idea: target mobile first by prefixing your class with `sm` -- this is how your element behaves at and after the small breakpoint.
+
+- Basic principle: mobile views tend to be row oriented, desktop tends to be columnar with 2 or 3 cols max and spacing around them. Once you go from desktop to mobile, all other colums disappear except 1 for the main content. `class="grid sm:grid-cols-4"`. By default, we want to have `hidden` and `sm:block` classes so that the element is hidden by default and toggled to display itself on larger screens. check example 3 in `layouts.html`.
+
+- Larger displays tend to be divided into 12 sections. `col-span-n` property controls how many columns a div takes.

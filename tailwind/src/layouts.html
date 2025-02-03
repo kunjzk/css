@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- 4 columns that become 4 rows -->
+    <!-- <div class="grid mb-4 sm:grid-cols-4 gap-2">
+      <div class="min-h-[100px] rounded-lg shadow bg-orange-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-teal-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-red-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-blue-500"></div>
+    </div> -->
+
+    <!-- 2 columns of different width on large screens, but equal in mobile -->
+    <!-- <div class="grid mb-4 sm:grid-cols-12 gap-2 grid-cols-2">
+      <div
+        class="min-h-[100px] rounded-lg shadow bg-orange-500 sm:col-span-2"
+      ></div>
+      <div
+        class="min-h-[100px] rounded-lg shadow bg-teal-500 sm:col-span-10"
+      ></div>
+    </div> -->
+
+    <!-- 3 columns that becomes 1 in mobile -->
+    <div class="grid m-4 sm:grid-cols-12 gap-2">
+      <div
+        class="min-h-[100px] rounded-lg shadow bg-orange-500 sm:col-span-2 sm:block hidden"
+      ></div>
+      <div
+        class="min-h-[100px] rounded-lg shadow bg-teal-500 sm:col-span-8"
+      ></div>
+      <div
+        class="min-h-[100px] rounded-lg shadow bg-red-500 sm:col-span-2 sm:block hidden"
+      ></div>
+    </div>
+  </body>
+</html>
